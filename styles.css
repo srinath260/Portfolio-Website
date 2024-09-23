@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: black; /* Solid black background */
+    color: white; /* White text for contrast */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto; /* Center the sections */
+    background: rgba(255, 255, 255, 0.1); /* Light background for sections */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Deeper shadow for depth */
+    text-align: center; /* Center all sub-titles */
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+h2 {
+    color: #4CAF50; /* Section heading color */
+    font-size: 2.2em; /* Increase font size for section headings */
+    margin-bottom: 10px; /* Space below heading */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+h2:hover {
+    color: #FFA500; /* Change color on hover for cinematic effect */
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Add a glow effect */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid */
+    gap: 10px; /* Space between grid items */
+    padding: 20px;
+}
+
+.skills-grid div {
+    background: rgba(255, 255, 255, 0.2); /* Background for skills items */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.skills-grid div:hover {
+    background: rgba(255, 255, 255, 0.5); /* Darker background on hover */
+}
+
+.contact-info {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: center; /* Center the items */
+    gap: 20px; /* Space between items */
+    padding: 10px 0;
+}
+
+.social-media {
+    margin-top: 10px; /* Space between contact info and social media icons */
+}
+
+.social-media a {
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-media a:hover {
+    color: #FFA500; /* Change color on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+    padding: 10px;
+    border-left: 4px solid #FFA500; /* Accent color */
+}
+
+#testimonials {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills in a single column on small screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+}
